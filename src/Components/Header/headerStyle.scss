@@ -1,0 +1,218 @@
+//Header
+.header {
+  padding: 25px 0;
+  transition: 0.5s;
+  position: sticky;
+  top: 0;
+  left: 0;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+
+  &__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    &-title {
+      border-radius: 15px;
+      transition: 0.3s;
+      font-size: 20px;
+      cursor: pointer;
+    }
+    .titlight{
+      color: #FFFFFF;
+      transition: 0.3s;
+    }
+    .titdark{
+      color: #6C3EF8;
+      transition: 0.3s;
+    }
+
+    &-title:hover {
+      font-size: 22px;
+      transition: 0.8s;
+    }
+
+    &-ul {
+      list-style-type: none;
+      display: flex;
+      column-gap: 10px;
+      transition: 0.3s;
+      align-items: center;
+
+      &_li {
+        padding: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.4s;
+        text-decoration: none;
+      }
+
+      .liLight{
+        color: #FFFFFF;
+      }
+      .liLight:hover{
+        background-color: #FFFFFF;
+        color: #6C3EF8;
+      }
+      .liDark{
+        color: #6C3EF8;
+      }
+      .liDark:hover{
+        background-color: #6C3EF8;
+        color: #FFFFFF;
+      }
+
+      &_li:hover {
+        font-size: 20px;
+
+        transition: 0.4s;
+        border-radius: 5px;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+      }
+    }
+  }
+
+  .burgerButton {
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+
+  .burgerButton:hover {
+    width: 26px;
+    height: 22px;
+    transition: 0.3s;
+  }
+}
+
+@media (min-width: 768px) {
+  .header:hover {
+    padding: 25px 0 40px 0;
+    transition: 0.8s;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+  }
+}
+
+
+// Burger Screen
+.burgerScreen {
+  animation: linear 0.3s burgerAn;
+  top: 0;
+  right: 0;
+  position: absolute;
+  z-index: 10;
+  width: 200px;
+  height: 300px;
+  display: flex;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 15px;
+
+  &__navbar {
+    display: none;
+    flex-flow: column;
+    color: #6C3EF8;
+    align-items: center;
+    row-gap: 15px;
+
+    a {
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+
+  &__row {
+    display: flex;
+    column-gap: 10px;
+    color: #6C3EF8;
+
+    .checkbox {
+      width: 40px;
+      height: 20px;
+      border-radius: 20px;
+      background-color: #6C3EF8;
+      -webkit-appearance: none;
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    .checkbox::before {
+      content: "";
+      width: 20px;
+      height: 20px;
+      border-radius: 20px;
+      background-color: #FFFFFF;
+    }
+
+    .check {
+      justify-content: flex-end !important;
+    }
+  }
+
+  .burgerScreen__close {
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    color: #6C3EF8;
+    cursor: pointer;
+  }
+}
+
+@keyframes burgerAn {
+  0% {
+    right: -100px;
+    opacity: 0;
+  }
+  100% {
+    right: 0;
+    opacity: 100%;
+  }
+}
+
+
+@media (max-width: 1080px) {
+  .header__navbar {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .burgerScreen__navbar {
+    a {
+      color: #6C3EF8;
+    }
+
+    display: flex !important;
+  }
+  .header__navbar-ul_li {
+    display: none !important;
+  }
+
+}
+
+.headerDark{
+  background-color: #140b2d;
+  transition: 0.3s;
+}
+
+.headerLight{
+  background-color: #6C3EF8;
+  transition: 0.3s;
+}
+
+.BurgerLight{
+  background-color: #FFFFFF;
+  transition: 0.3s;
+}
+.BurgerDark{
+  background-color: #140b2d;
+  transition: 0.3s;
+}

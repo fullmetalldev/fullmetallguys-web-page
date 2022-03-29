@@ -1,0 +1,29 @@
+.footer {
+  padding: 50px;
+}
+.footer__row {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-items: center;
+  column-gap: 20px;
+}
+.footer__row a svg {
+  width: 50px;
+  height: 50px;
+}
+.footer__row a svg path {
+  fill: #FFFFFF;
+}
+
+.footerLight {
+  background-color: #6C3EF8;
+  transition: 0.3s;
+}
+
+.footerDark {
+  background-color: #140b2d;
+  transition: 0.3s;
+}
+
+/*# sourceMappingURL=footer.css.map */

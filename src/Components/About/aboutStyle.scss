@@ -1,0 +1,98 @@
+
+.about {
+
+  padding: 50px 15px;
+
+  &__row {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    &-card {
+      cursor: pointer;
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+      column-gap: 20px;
+      padding: 15px;
+      border-radius: 30px;
+      display: flex;
+      font-size: 0;
+      align-items: center;
+
+
+      &_img {
+        width: 300px;
+        border-radius: 50%;
+        position: relative;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+      }
+    }
+
+    &-card:hover {
+      font-size: 20px;
+      transition: 3s;
+    }
+  }
+}
+
+@media (max-width: 1080px) {
+  .about__row-card_img {
+    width: 260px;
+    height: 260px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about__row-card:hover {
+    font-size: 18px;
+  }
+  .about__row-card_img {
+    width: 220px;
+    height: 220px;
+  }
+}
+
+@media (max-width: 500px) {
+  .about__row-card {
+    flex-flow: column;
+    justify-content: center;
+  }
+  .about__row-card:hover {
+    row-gap: 10px;
+
+  }
+
+  @media (max-width: 425px) {
+    .about__row-card_img {
+      width: 200px;
+      height: 200px;
+    }
+    .about__row-card_title {
+      padding: 5px;
+    }
+  }
+}
+
+//#6C3EF8
+
+.aboutLight {
+  background-color: #FFFFFF;
+  transition: 0.3s;
+
+}
+
+.aboutDark {
+  background-color: #1b0d37;
+  transition: 0.3s;
+}
+
+.lightCard {
+  background-color: #6C3EF8;
+  transition: 2s;
+  color: #FFFFFF;
+}
+
+.darkCard {
+  background-color: #140b2d;
+  transition: 2s;
+  color: #6C3EF8 !important;
+}

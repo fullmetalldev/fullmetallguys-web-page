@@ -1,0 +1,43 @@
+.skills {
+  padding: 50px 0;
+
+
+  .bootstrap {
+    height: 75px;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: center;
+    row-gap: 25px;
+    column-gap: 15px;
+    flex-flow: wrap row;
+    align-items: center;
+
+    &_title {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      color: #FFFFFF;
+    }
+
+    img {
+      max-height: 100px;
+    }
+  }
+}
+
+.skillsLight {
+  background-color: #6C3EF8;
+  transition: 0.3s;
+}
+
+.skillsDark {
+  background-color: #140b2d;
+  transition: 0.3s;
+
+  .skills__row_title {
+    color: #6C3EF8;
+    transition: 0.3s;
+  }
+}

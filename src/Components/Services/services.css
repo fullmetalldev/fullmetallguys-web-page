@@ -1,0 +1,68 @@
+.services {
+  padding: 80px 0;
+}
+.services__row {
+  display: flex;
+  flex-flow: row wrap;
+  row-gap: 30px;
+  column-gap: 30px;
+  justify-content: center;
+}
+.services__row_titleRow {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.services__row_card {
+  padding: 15px;
+  display: flex;
+  row-gap: 10px;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  color: #6C3EF8;
+  width: 310px;
+  height: 200px;
+  border-radius: 30px;
+  transition: 0.3s;
+  cursor: pointer;
+  text-align: center;
+}
+.services__row_card svg path {
+  fill: #6C3EF8;
+  transition: 0.3s;
+}
+.services__row_card:hover {
+  background-color: #6C3EF8;
+  border: 3px solid #ffffff;
+  color: #ffffff;
+  transition: 0.3s;
+}
+.services__row_card:hover svg path {
+  fill: #ffffff;
+  transition: 0.3s;
+}
+
+.servicesLight {
+  background-color: #6C3EF8;
+  transition: 0.3s;
+  color: #FFFFFF;
+}
+
+.servicesDark {
+  background-color: #140b2d;
+  transition: 0.3s;
+  color: #6C3EF8;
+}
+
+.cardLight {
+  background-color: #ffffff;
+  transition: 0.3s;
+}
+
+.cardDark {
+  background-color: #1b0d37;
+  transition: 0.3s;
+}
+
+/*# sourceMappingURL=services.css.map */

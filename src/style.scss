@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "IBM Plex Sans", sans-serif;
+  scroll-behavior: smooth;
+  img{
+    user-select: none;
+  }
+
+}
+
+.container {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.AppDark{
+  background-color: #1b0d37;
+  transition: 0.3s;
+}
+.AppLight{
+  background-color: #FFFFFF;
+  transition: 0.3s;
+}

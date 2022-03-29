@@ -1,0 +1,44 @@
+.portfolio {
+  padding: 100px 0;
+  &__row {
+    display: flex;
+    flex-flow: wrap row;
+    column-gap: 30px;
+    row-gap: 30px;
+    justify-content: center;
+
+    &_title {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      color: #6C3EF8;
+    }
+
+    &_card {
+      width: 330px;
+      cursor: pointer;
+      border-radius: 35px;
+      overflow: hidden;
+      display: flex;
+      padding: 3px;
+      justify-content: center;
+      align-items: center;
+      transition: 0.2s;
+      height: 230px;
+    }
+
+    &_card:hover {
+      background-color: #6C3EF8;
+      transition: 0.3s;
+    }
+  }
+}
+
+.portLight{
+  background-color: #FFFFFF;
+  transition: 0.3s;
+}
+.portDark{
+  background-color: #1b0d37;
+  transition: 0.3s;
+}

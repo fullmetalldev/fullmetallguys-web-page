@@ -1,0 +1,90 @@
+.contacts {
+  padding: 100px 0;
+}
+.contacts__row {
+  display: flex;
+  justify-content: center;
+}
+.contacts__row_form {
+  display: flex;
+  flex-flow: column;
+  row-gap: 55px;
+  border-radius: 20px;
+  padding: 50px;
+}
+.contacts__row_form input {
+  outline: none;
+  border: none;
+  width: 400px;
+  border-radius: 20px;
+  padding: 5px;
+  font-size: 16px;
+}
+.contacts__row_form input::placeholder {
+  color: #6C3EF8;
+}
+.contacts__row_form button {
+  outline: none;
+  border: none;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  padding: 5px;
+  color: #6C3EF8;
+}
+
+@media (max-width: 530px) {
+  .contacts__row_form input {
+    width: 100%;
+  }
+
+  .contacts__row_form {
+    padding: 30px;
+  }
+}
+.contLight {
+  background-color: #FFFFFF;
+  transition: 0.3s;
+}
+
+.contDark {
+  background-color: #1b0d37;
+  transition: 0.3s;
+}
+
+.formLight {
+  background-color: #6C3EF8;
+  transition: 0.3s;
+}
+.formLight input {
+  background-color: #FFFFFF;
+  color: #6C3EF8;
+  transition: 0.3s;
+}
+.formLight button {
+  background-color: #FFFFFF;
+  transition: 0.3s;
+}
+.formLight h2 {
+  color: #FFFFFF;
+  transition: 0.3s;
+}
+
+.formDark {
+  background-color: #140b2d;
+  transition: 0.3s;
+}
+.formDark input {
+  color: #FFFFFF;
+  background-color: #1b0d37;
+  transition: 0.3s;
+}
+.formDark button {
+  background-color: #1b0d37;
+  transition: 0.3s;
+}
+.formDark h2 {
+  color: #6C3EF8;
+  transition: 0.3s;
+}
+
+/*# sourceMappingURL=contacts.css.map */
